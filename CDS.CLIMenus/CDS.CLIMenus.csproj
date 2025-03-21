@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net48</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>    <Title>CDS.CLIMenus</Title>
+    <Description>Library for very simple and quick console-app menus. Great for simple demos and test apps.</Description>
+    <Authors>Jon Shadforth</Authors>
+    <Company>Carpe Diem Systems</Company>
+    <Copyright>Copyright (c) 2025 Carpe Diem Systems</Copyright>
+    <RepositoryUrl>https://github.com/nooogle/CDS.DemoAppMenus</RepositoryUrl>
+    <PackageTags>console;cli;menu;terminal</PackageTags>
+    <PackageProjectUrl>https://github.com/nooogle/CDS.DemoAppMenus</PackageProjectUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+  </PropertyGroup>
+
+</Project>
