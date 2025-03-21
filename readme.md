@@ -49,6 +49,13 @@ var menu = new Menu("Main Menu", menuItems);
 menu.Run();
 ```
 
+## Build Instructions
+
+Follow the standard practice for building a .Net project using Nerdbank.GitVersioning.
+The version.json file is automatically updated with the new version number, or
+can be manually updated for a major or minor version change.
+
+
 
 ## License
 
