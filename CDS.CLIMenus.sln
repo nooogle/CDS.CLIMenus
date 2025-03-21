@@ -8,6 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.github\copilot-instructions.md = .github\copilot-instructions.md
 		LICENSE.txt = LICENSE.txt
 		readme.md = readme.md
+		version.json = version.json
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CDS.CLIMenus", "CDS.CLIMenus\CDS.CLIMenus.csproj", "{C9AF1D50-8445-EA96-C3B8-1E8FAF73B828}"
