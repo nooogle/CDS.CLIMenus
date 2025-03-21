@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Title>CDS.CLIMenus</Title>
     <Description>Library for very simple and quick console-app menus. Great for simple demos and test apps.</Description>
     <Authors>Jon Shadforth</Authors>
@@ -38,5 +39,4 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-
 </Project>

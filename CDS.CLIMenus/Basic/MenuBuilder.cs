@@ -25,7 +25,7 @@ public class MenuBuilder
     /// <param name="action">The action to execute when this menu item is selected.</param>
     public MenuBuilder AddItem(string displayText, Action action)
     {
-        items.Add(new MenuItem(displayText, action, description: string.Empty));
+        items.Add(new MenuItem(displayText, action));
         return this;
     }
 
@@ -37,35 +37,12 @@ public class MenuBuilder
     /// <param name="action">The action to execute when this menu item is selected.</param>
     /// <param name="description">Optional description providing more details about this menu item.</param>
     /// <returns>The builder instance for method chaining.</returns>
-    public MenuBuilder AddItem(string displayText, Action action, string description)
+    public MenuBuilder AddItem(string displayText, string description, Action action)
     {
-        items.Add(new MenuItem(displayText, action, description));
+        items.Add(new MenuItem(displayText, description, action));
         return this;
     }
 
-
-    /// <summary>
-    /// Adds a menu item that returns to the parent menu when selected.
-    /// </summary>
-    /// <param name="displayText">The text to display for this menu item.</param>
-    /// <param name="description">Optional description providing more details about this menu item.</param>
-    /// <returns>The builder instance for method chaining.</returns>
-    public MenuBuilder AddReturnItem(string displayText, string description)
-    {
-        return AddQuitItem(displayText, description);
-    }
-
-    /// <summary>
-    /// Adds a menu item that quits the menu when selected.
-    /// </summary>
-    /// <param name="displayText">The text to display for this menu item.</param>
-    /// <param name="description">Optional description providing more details about this menu item.</param>
-    /// <returns>The builder instance for method chaining.</returns>
-    public MenuBuilder AddQuitItem(string displayText, string description)
-    {
-        items.Add(new MenuItem(displayText, () => { }, description));
-        return this;
-    }
 
     /// <summary>
     /// Creates and returns a Menu instance based on the builder configuration.

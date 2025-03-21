@@ -26,7 +26,7 @@ public class MenuItem
     /// </summary>
     /// <param name="displayText">The text to display for this menu item.</param>
     /// <param name="action">The action to execute when this menu item is selected.</param>
-    public MenuItem(string displayText, Action action) : this(displayText, action, string.Empty)
+    public MenuItem(string displayText, Action action) : this(displayText, string.Empty, action)
     {
     }
 
@@ -37,7 +37,7 @@ public class MenuItem
     /// <param name="displayText">The text to display for this menu item.</param>
     /// <param name="action">The action to execute when this menu item is selected.</param>
     /// <param name="description">Optional description providing more details about this menu item.</param>
-    public MenuItem(string displayText, Action action, string description = "")
+    public MenuItem(string displayText, string description, Action action)
     {
         DisplayText = displayText ?? throw new ArgumentNullException(nameof(displayText));
         Action = action ?? throw new ArgumentNullException(nameof(action));
