@@ -4,15 +4,33 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>    <Title>CDS.CLIMenus</Title>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>CDS.CLIMenus</Title>
     <Description>Library for very simple and quick console-app menus. Great for simple demos and test apps.</Description>
     <Authors>Jon Shadforth</Authors>
     <Company>Carpe Diem Systems</Company>
     <Copyright>Copyright (c) 2025 Carpe Diem Systems</Copyright>
-    <RepositoryUrl>https://github.com/nooogle/CDS.DemoAppMenus</RepositoryUrl>
+    <RepositoryUrl>https://github.com/nooogle/CDS.CLIMenus</RepositoryUrl>
     <PackageTags>console;cli;menu;terminal</PackageTags>
-    <PackageProjectUrl>https://github.com/nooogle/CDS.DemoAppMenus</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/nooogle/CDS.CLIMenus</PackageProjectUrl>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageIcon>list.png</PackageIcon>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\list.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>

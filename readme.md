@@ -28,7 +28,7 @@ new MenuBuilder("Main menu")
 	.Run();
 ```
 
-![Console Screenshot](https://raw.githubusercontent.com/nooogle/CDS.CLIMenus/master/Docs/Console_Screenshot.png)
+![Console Screenshot](https://raw.githubusercontent.com/nooogle/CDS.CLIMenus/master/Console_Screenshot.png)
 
 
 ### Conventional API for Building Menus
