@@ -11,6 +11,11 @@ time for the fun stuff!
 In this release there is only a basic menu system, in the `Basic` namespace. Future 
 release will include more advanced features.
 
+Correction: this release prompts the user to hit any key after running the
+menu action. This feature was meant to be in the original release, but was
+accidentally left out!
+
+
 ## Usage
 
 ### Fluent API for Building Menus

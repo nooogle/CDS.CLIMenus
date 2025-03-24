@@ -32,10 +32,6 @@ namespace ConsoleDemo
             {
                 HandleGameError(ex);
             }
-            finally
-            {
-                WaitForKeyPress();
-            }
         }
 
         /// <summary>
@@ -118,15 +114,6 @@ namespace ConsoleDemo
         private void HandleGameError(Exception ex)
         {
             Console.WriteLine($"An error occurred while running the game: {ex.Message}");
-        }
-
-        /// <summary>
-        /// Waits for the user to press a key before returning to the menu.
-        /// </summary>
-        private void WaitForKeyPress()
-        {
-            Console.WriteLine("Press any key to return to the menu...");
-            Console.ReadKey(true);
         }
     }
 }

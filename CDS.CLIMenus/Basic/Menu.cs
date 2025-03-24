@@ -9,6 +9,7 @@ public class Menu
     private readonly string title;
     private bool isRunning = false;
 
+
     /// <summary>
     /// Creates a new menu with the specified title and menu items.
     /// </summary>
@@ -110,6 +111,8 @@ public class Menu
             {
                 var selectedItem = items[selection - 1];
                 selectedItem.Action();
+                Console.WriteLine("Press any key to continue...");
+                Console.ReadKey(true);
             }
             catch (Exception ex)
             {

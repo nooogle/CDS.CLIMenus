@@ -12,15 +12,8 @@ namespace ConsoleDemo
         /// </summary>
         public void Run()
         {
-            try
-            {
-                DisplayHeader();
-                GenerateAndDisplayPrimes(DefaultCount);
-            }
-            finally
-            {
-                WaitForKeyPress();
-            }
+            DisplayHeader();
+            GenerateAndDisplayPrimes(DefaultCount);
         }
 
         /// <summary>
@@ -76,15 +69,6 @@ namespace ConsoleDemo
             Console.Clear();
             Console.WriteLine("Prime Number Generator");
             Console.WriteLine("=====================");
-        }
-
-        /// <summary>
-        /// Waits for the user to press a key before returning to the menu.
-        /// </summary>
-        private void WaitForKeyPress()
-        {
-            Console.WriteLine("Press any key to return to the menu...");
-            Console.ReadKey(true);
         }
     }
 }
