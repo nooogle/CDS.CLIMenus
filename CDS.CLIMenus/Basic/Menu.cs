@@ -11,6 +11,12 @@ public class Menu
 
 
     /// <summary>
+    /// Callback action to execute when a menu item's action has completed.
+    /// </summary>
+    public Action? OnItemComplete { get; set; }
+
+
+    /// <summary>
     /// Creates a new menu with the specified title and menu items.
     /// </summary>
     /// <param name="title">The title of the menu.</param>
@@ -111,6 +117,7 @@ public class Menu
             {
                 var selectedItem = items[selection - 1];
                 selectedItem.Action();
+                OnItemComplete?.Invoke();
                 Console.WriteLine("Press any key to continue...");
                 Console.ReadKey(true);
             }

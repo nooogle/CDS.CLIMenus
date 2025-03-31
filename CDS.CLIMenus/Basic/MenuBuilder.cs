@@ -7,6 +7,8 @@ public class MenuBuilder
 {
     private readonly string title;
     private readonly List<MenuItem> items = new List<MenuItem>();
+    private Action? onItemComplete = null;
+
 
     /// <summary>
     /// Creates a new menu builder with the specified title.
@@ -50,6 +52,18 @@ public class MenuBuilder
     /// <returns>A configured Menu instance.</returns>
     public Menu Build()
     {
-        return new Menu(title, items);
+        var menu = new Menu(title, items);
+        menu.OnItemComplete = onItemComplete;
+        return menu;
+    }
+
+
+    /// <summary>
+    /// Sets the action to execute when a menu item's action has completed.
+    /// </summary>
+    public MenuBuilder SetOnItemComplete(Action value)
+    {
+        onItemComplete = value;
+        return this;
     }
 }
