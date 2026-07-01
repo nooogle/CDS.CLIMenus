@@ -1,5 +1,7 @@
 ﻿# CDS.CLIMenus
 
+**Note: https://spectreconsole.net is much better for colorful and interactive menus and has many more features!**
+
 CDS.CLIMenus is a library for creating very simple and quick 
 console-app menus. It is great for simple demo and test applications.
 
