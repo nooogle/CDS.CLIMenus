@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup>
+    <!-- MinVer: git tags must use uppercase V prefix, e.g. V1.0.0 -->
+    <MinVerTagPrefix>V</MinVerTagPrefix>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MinVer" Version="7.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

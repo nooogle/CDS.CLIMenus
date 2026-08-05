@@ -60,9 +60,9 @@ menu.Run();
 
 ## Build Instructions
 
-Follow the standard practice for building a .Net project using Nerdbank.GitVersioning.
-The version.json file is automatically updated with the new version number, or
-can be manually updated for a major or minor version change.
+Version is derived automatically from git tags via [MinVer](https://github.com/adamralph/minver).
+Tags must use an uppercase `V` prefix (e.g. `V1.2.0`); pushing one triggers the
+release workflow to build, pack, and publish to NuGet.
 
 
 
