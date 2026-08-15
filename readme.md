@@ -1,5 +1,11 @@
 ﻿# CDS.CLIMenus
 
+[![CI](https://github.com/nooogle/CDS.CLIMenus/actions/workflows/ci.yml/badge.svg)](https://github.com/nooogle/CDS.CLIMenus/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/nooogle/CDS.CLIMenus/actions/workflows/codeql.yml/badge.svg)](https://github.com/nooogle/CDS.CLIMenus/actions/workflows/codeql.yml)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/nooogle/CDS.CLIMenus/badge)](https://securityscorecards.dev/viewer/?uri=github.com/nooogle/CDS.CLIMenus)
+[![NuGet](https://img.shields.io/nuget/v/CDS.CLIMenus)](https://www.nuget.org/packages/CDS.CLIMenus)
+[![License](https://img.shields.io/github/license/nooogle/CDS.CLIMenus)](LICENSE.txt)
+
 **Note: https://spectreconsole.net is much better for colorful and interactive menus and has many more features!**
 
 CDS.CLIMenus is a library for creating very simple and quick 
