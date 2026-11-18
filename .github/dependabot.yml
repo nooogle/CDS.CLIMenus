@@ -11,8 +11,8 @@ updates:
       include: "scope"
     labels: [ "dependencies", "nuget" ]
     assignees: [ "nooogle" ]
-    # These packages ship in step with the .NET runtime; a new major targets
-    # the next .NET release. Stay on the 10.x line while the repos target net10.
+    # These packages ship in step with the .NET runtime, so each new major
+    # tracks the next .NET release. Take majors deliberately when retargeting.
     ignore:
       - dependency-name: "Microsoft.Extensions.*"
         update-types: [ "version-update:semver-major" ]
